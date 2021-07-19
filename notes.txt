@@ -1,0 +1,32 @@
+Apis:
+
+GET: /tasks -  List down all the task
+Response: 
+    taskId
+    taskname
+    description 
+    status
+query:
+    status
+
+GET: /tasks/:id - Fetch task by ID
+Response:
+    taskname
+    description
+    status
+
+POST: /tasks - Create task
+Request Body:
+    taskname
+    description
+    status:false
+
+Update: /tasks/:id -update task by ID
+Request Body:
+    taskname
+    description
+    status
+
+Delete: /tasks/:id -delete a particular task
+Response: 
+    Success
